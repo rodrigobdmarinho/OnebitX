@@ -11979,9 +11979,6 @@ textarea.form-control-lg {
 #section-1--home {
   background-image: url("../../dist/img/home/01.jpg");
 }
-#section-1--home .arrow-down {
-  width: 90px;
-}
 
 #section-2--home {
   background-image: url("../../dist/img/home/03.jpg");
@@ -24079,6 +24076,72 @@ textarea.form-control-lg {
     margin-left: 13%;
   }
 }
+#section-1__human-flight {
+  background-image: url("../../dist/img/humanFlight/01.jpg");
+}
+#section-1__human-flight .main-content {
+  min-height: 80vh;
+}
+#section-1__human-flight .arrow-down {
+  display: none;
+}
+
+#section-2__human-flight {
+  background-color: #000;
+}
+#section-2__human-flight p {
+  font-size: 1.25rem;
+  max-width: 800px;
+}
+#section-2__human-flight .main-content {
+  min-height: 25vh;
+}
+
+#section-3__human-flight {
+  background-image: url("../../dist/img/humanFlight/02.jpg");
+}
+#section-3__human-flight h1, #section-3__human-flight .h1 {
+  font-size: 3.75rem;
+}
+
+#section-4__human-flight {
+  background-image: url("../../dist/img/humanFlight/03.jpg");
+}
+#section-4__human-flight h1, #section-4__human-flight .h1 {
+  font-size: 3.75rem;
+}
+
+#section-5__human-flight {
+  background-image: url("../../dist/img/humanFlight/04.jpg");
+}
+#section-5__human-flight h1, #section-5__human-flight .h1 {
+  font-size: 3.75rem;
+}
+
+#section-6__human-flight {
+  background-image: url("../../dist/img/humanFlight/05.jpg");
+}
+#section-6__human-flight h1, #section-6__human-flight .h1 {
+  font-size: 3.75rem;
+}
+
+@media (min-width: 576px) {
+  #section-1__human-flight .title--lg {
+    font-size: 5.625rem;
+  }
+  #section-1__human-flight .title--lg + p {
+    font-size: 1.875rem;
+  }
+  #section-1__human-flight .arrow-down {
+    width: 120px;
+    display: block;
+  }
+}
+@media (min-width: 768px) {
+  #section-1__human-flight .title--lg {
+    font-size: 7.5rem;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -24117,6 +24180,17 @@ section .main-content--medium {
   color: #fff;
 }
 
+.arrow-down {
+  width: 90px;
+}
+
+.title--lg {
+  font-size: 3.25rem;
+}
+.title--lg + p {
+  font-size: 1rem;
+}
+
 .bg-overlay--dark::before {
   content: "";
   display: block;
@@ -24127,13 +24201,6 @@ section .main-content--medium {
   height: 100%;
   z-index: 0;
   background-color: rgba(0, 0, 0, 0.2);
-}
-
-.title--lg {
-  font-size: 3.25rem;
-}
-.title--lg + p {
-  font-size: 1rem;
 }
 
 .main-nav .main-nav__logo {

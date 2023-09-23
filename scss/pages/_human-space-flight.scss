@@ -1,0 +1,81 @@
+#section-1__human-flight {
+  background-image: url("../../dist/img/humanFlight/01.jpg");
+
+  .main-content {
+    min-height: 80vh;
+  }
+
+  .arrow-down {
+    display: none;
+  }
+}
+
+#section-2__human-flight {
+  background-color: #000;
+
+  p {
+    font-size: 1.25rem;
+    max-width: 800px;
+  }
+
+  .main-content {
+    min-height: 25vh;
+  }
+}
+
+#section-3__human-flight {
+  background-image: url("../../dist/img/humanFlight/02.jpg");
+
+  h1 {
+    font-size: 3.75rem;
+  }
+}
+
+#section-4__human-flight {
+  background-image: url("../../dist/img/humanFlight/03.jpg");
+
+  h1 {
+    font-size: 3.75rem;
+  }
+}
+
+#section-5__human-flight {
+  background-image: url("../../dist/img/humanFlight/04.jpg");
+
+  h1 {
+    font-size: 3.75rem;
+  }
+}
+
+#section-6__human-flight {
+  background-image: url("../../dist/img/humanFlight/05.jpg");
+
+  h1 {
+    font-size: 3.75rem;
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  #section-1__human-flight {
+    .title--lg {
+      font-size: 5.625rem;
+  
+      & + p {
+        font-size: 1.875rem;
+      }
+    }
+
+    .arrow-down {
+      width: 120px;
+      display: block;
+    }
+  }
+}
+
+@include media-breakpoint-up(md) {
+  #section-1__human-flight {
+    .title--lg {
+      font-size: 7.5rem;
+    }
+  }
+}

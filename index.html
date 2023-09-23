@@ -11,18 +11,17 @@
       rel="stylesheet"
       href="./node_modules/bootstrap/dist/css/bootstrap.css"
     />
-    <!-- Bootstrap Icons Import -->
-    <link
-      rel="stylesheet"
-      href="./node_modules/bootstrap-icons/font/bootstrap-icons.css"
-    />
+    <!-- AOS CSS Import -->
+    <link rel="stylesheet" href="node_modules/aos/dist/aos.css" />
 
     <!-- Main CSS Import -->
     <link rel="stylesheet" href="./dist/style/main.css" />
   </head>
   <body>
+    <!-- SECTION 1 START -->
     <section class="d-flex flex-column" id="section-1">
       <div class="container">
+        <!-- NAVBAR 1 START -->
         <header>
           <nav class="main-nav navbar navbar-expand-lg navbar-dark pt-4">
             <div class="container">
@@ -59,6 +58,7 @@
             </div>
           </nav>
         </header>
+        <!-- NAVBAR 1 END -->
       </div>
       <div class="main-content container d-flex flex-column">
         <div class="main-content__text--small">
@@ -77,9 +77,15 @@
         </a>
       </div>
     </section>
+    <!-- SECTION 1 END -->
 
+    <!-- SECTION 2 START -->
     <section id="section-2">
-      <div class="main-content container">
+      <div
+        class="main-content container"
+        data-aos="fade-right"
+        data-aos-duration="1500"
+      >
         <div class="main-content__text--small">
           <h5>MISSÃO CONCLUÍDA</h5>
           <h1>MISSÃO EQUIPE-2 RETORNOU PARA A TERRA</h1>
@@ -89,9 +95,15 @@
         </button>
       </div>
     </section>
+    <!-- SECTION 2 END -->
 
+    <!-- SECTION 3 START -->
     <section id="section-3">
-      <div class="main-content container">
+      <div
+        class="main-content container"
+        data-aos="fade-down"
+        data-aos-duration="1500"
+      >
         <div class="main-content__text--small">
           <h5>MISSÃO CONCLUÍDA</h5>
           <h1>DRAGON RETORNOU PARA A TERRA</h1>
@@ -101,9 +113,15 @@
         </button>
       </div>
     </section>
+    <!-- SECTION 3 END -->
 
+    <!-- SECTION 4 START -->
     <section id="section-4">
-      <div class="main-content container">
+      <div
+        class="main-content container"
+        data-aos="fade-down-right"
+        data-aos-duration="1500"
+      >
         <div class="main-content__text--medium">
           <h1>STARSHIP POUSA ASTRONAUTAS DA NASA NA LUA</h1>
         </div>
@@ -112,7 +130,9 @@
         </button>
       </div>
     </section>
+    <!-- SECTION 4 END -->
 
+    <!-- FOOTER START -->
     <footer
       class="footer container-fluid d-flex align-items-center justify-content-center"
     >
@@ -121,8 +141,16 @@
       <a href="#" class="footer__link">YouTube</a>
       <a href="#" class="footer__link">Twitter</a>
     </footer>
+    <!-- FOOTER END -->
 
     <!-- Bootstrap JS Import -->
     <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+
+    <!-- AOS JS Import -->
+    <script src="node_modules/aos/dist/aos.js"></script>
+    <!-- AOS Init -->
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

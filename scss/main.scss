@@ -1,10 +1,66 @@
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
 @import "./pages/_home.scss";
+@import "./pages/falcon-9";
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   color: #fff;
+}
+
+section {
+  background-position: center;
+  background-size: cover;
+
+  * {
+    z-index: 1;
+  }
+
+  .main-content--pt-large {
+    padding-top: 200px;
+  }
+
+  .cta-btn {
+    width: max-content;
+    padding: 15px 35px;
+    border: 2px solid #fff;
+  }
+
+  .main-content--xsmall {
+    max-width: 500px;
+  }
+
+  .main-content--small {
+    max-width: 550px;
+  }
+  
+  .main-content--medium {
+    max-width: 650px;
+  }
+}
+
+.table tbody tr td {
+  background-color: transparent;
+  color: #fff;
+}
+
+.bg-overlay--dark {
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+}
+
+.title--lg {
+  font-size: 5.625rem;
 }
 
 .main-nav {
@@ -40,6 +96,16 @@
 
     &:hover {
       color: #b9b9b9;
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .title--lg {
+    font-size: $h1-font-size;
+
+    & + p {
+      font-size: $font-size-base;
     }
   }
 }

@@ -11979,6 +11979,9 @@ textarea.form-control-lg {
 #section-1--home {
   background-image: url("../../dist/img/home/01.jpg");
 }
+#section-1--home .arrow-down {
+  width: 90px;
+}
 
 #section-2--home {
   background-image: url("../../dist/img/home/03.jpg");
@@ -24180,17 +24183,6 @@ section .main-content--medium {
   color: #fff;
 }
 
-.arrow-down {
-  width: 90px;
-}
-
-.title--lg {
-  font-size: 3.25rem;
-}
-.title--lg + p {
-  font-size: 1rem;
-}
-
 .bg-overlay--dark::before {
   content: "";
   display: block;
@@ -24201,6 +24193,13 @@ section .main-content--medium {
   height: 100%;
   z-index: 0;
   background-color: rgba(0, 0, 0, 0.2);
+}
+
+.title--lg {
+  font-size: 3.25rem;
+}
+.title--lg + p {
+  font-size: 1rem;
 }
 
 .main-nav .main-nav__logo {

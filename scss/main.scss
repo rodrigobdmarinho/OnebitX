@@ -1,7 +1,7 @@
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 @import "./pages/_home.scss";
 @import "./pages/falcon-9";
-@import "./pages/human-space-flight.scss";
+@import "./pages/human-space-flight";
 
 * {
   margin: 0;
@@ -46,18 +46,6 @@ section {
   color: #fff;
 }
 
-.arrow-down {
-  width: 90px;
-}
-
-.title--lg {
-  font-size: 3.25rem;
-
-  & + p {
-    font-size: $font-size-base;
-  }
-}
-
 .bg-overlay--dark {
   &::before {
     content: "";
@@ -69,6 +57,14 @@ section {
     height: 100%;
     z-index: 0;
     background-color: rgba(0, 0, 0, 0.2);
+  }
+}
+
+.title--lg {
+  font-size: 3.25rem;
+
+  & + p {
+    font-size: $font-size-base;
   }
 }
 

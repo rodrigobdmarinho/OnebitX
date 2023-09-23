@@ -60,14 +60,16 @@ section {
 }
 
 .title--lg {
-  font-size: 5.625rem;
+  font-size: 3.25rem;
+
+  & + p {
+    font-size: $font-size-base;
+  }
 }
 
 .main-nav {
   .main-nav__logo {
-    width: 240px;
-    margin-left: -10px;
-    margin-right: 20px;
+    max-width: 190px;
   }
 
   .nav-link {
@@ -100,12 +102,30 @@ section {
   }
 }
 
-@include media-breakpoint-down(sm) {
+@include media-breakpoint-up(sm) {
+  .main-nav {
+    .main-nav__logo {
+      max-width: 240px;
+      margin-left: -10px;
+      margin-right: 20px;
+    }
+  }
+
   .title--lg {
-    font-size: $h1-font-size;
+    font-size: 4.5rem;
 
     & + p {
-      font-size: $font-size-base;
+      font-size: $h6-font-size;
+    }
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .title--lg {
+    font-size: 5.625rem;
+    
+    & + p {
+      font-size: $h5-font-size;
     }
   }
 }

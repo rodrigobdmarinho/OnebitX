@@ -1,0 +1,76 @@
+section {
+  min-height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+section .main-content {
+  padding-top: 200px;
+}
+section .main-content .main-content__text--small {
+  max-width: 550px;
+}
+section .main-content .main-content__text--medium {
+  max-width: 650px;
+}
+section .cta-btn {
+  width: -moz-max-content;
+  width: max-content;
+  padding: 15px 35px;
+  border: 2px solid #fff;
+}
+
+#section-1 {
+  background-image: url("../../dist/img/home/01.jpg");
+}
+#section-1 .arrow-down {
+  width: 90px;
+}
+
+#section-2 {
+  background-image: url("../../dist/img/home/03.jpg");
+}
+
+#section-3 {
+  background-image: url("../../dist/img/home/02.gif");
+}
+
+#section-4 {
+  background-image: url("../../dist/img/home/04.jpg");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+.main-nav .main-nav__logo {
+  width: 240px;
+  margin-left: -10px;
+  margin-right: 20px;
+}
+.main-nav .nav-link {
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.footer {
+  background-color: #000;
+  height: 15vh;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+.footer span {
+  color: #555252;
+}
+.footer a {
+  text-decoration: none;
+  color: #fff;
+}
+.footer a:not(:last-child) {
+  margin-right: 1.5rem;
+}
+.footer a:hover {
+  color: #b9b9b9;
+}/*# sourceMappingURL=main.css.map */

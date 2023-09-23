@@ -1,0 +1,45 @@
+@import "./pages/_home.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+.main-nav {
+  .main-nav__logo {
+    width: 240px;
+    margin-left: -10px;
+    margin-right: 20px;
+  }
+
+  .nav-link {
+    font-size: 0.75rem;
+    font-weight: 700;
+  }
+}
+
+.footer {
+  background-color: #000;
+  height: 15vh;
+  font-size: 0.75rem;
+  font-weight: 500;
+
+  span {
+    color: #555252;
+  }
+
+  a {
+    text-decoration: none;
+    color: #fff;
+
+    &:not(:last-child) {
+      margin-right: 1.5rem;
+    }
+
+    &:hover {
+      color: #b9b9b9;
+    }
+  }
+}
